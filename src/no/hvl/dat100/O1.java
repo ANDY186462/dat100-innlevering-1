@@ -14,27 +14,27 @@ public class O1 {
 
 		for (int i = 0; i < antallStudenter; i++) {
 
-			String p = showInputDialog("Poengsum" + (i + 1) + ":");
+			String p = showInputDialog((i+1)+". " +  "Poengsum:");
 
 			int Poengsum = Integer.parseInt(p);
 
 			if (0 <= Poengsum && Poengsum < 40) {
-				System.out.println("F");
+				System.out.println((i+1)+". elev fikk F");
 
 			} else if (Poengsum > 39 && Poengsum < 50) {
-				System.out.println("E");
+				System.out.println((i+1)+". elev fikk E");
 
 			} else if (Poengsum > 49 && Poengsum < 60) {
-				System.out.println("D");
+				System.out.println((i+1)+". elev fikk D");
 
 			} else if (Poengsum > 59 && Poengsum < 80) {
-				System.out.println("C");
+				System.out.println((i+1)+". elev fikk C");
 
 			} else if (Poengsum > 79 && Poengsum < 90) {
-				System.out.println("B");
+				System.out.println((i+1)+". elev fikk B");
 
 			} else if (Poengsum > 89 && Poengsum <= 100) {
-				System.out.println("A");
+				System.out.println((i+1)+". elev fikk A");
 
 			} else {
 				System.out.println("Ugyldig poengsum");
